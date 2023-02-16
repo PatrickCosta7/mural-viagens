@@ -1,0 +1,18 @@
+Construir um mural 
+
+-Basear cadastro no App organo
+
+    - Banner
+        - Mural de viagens 
+        - Arasaka travels
+    - Formulário de cadastro
+        País: Opção de cor de card e de fundo
+        Local: Nome, descrição, data e foto
+    - Paises
+        Cards
+    - Rodapé
+        Redes - Copyright
+
+
+
+        1440 x 556
