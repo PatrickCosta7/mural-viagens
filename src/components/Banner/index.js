@@ -4,7 +4,7 @@ const Banner = () => {
 
     return(
         <header className='banner'>
-            <img src='/imagens/montreal.jpg' alt='montreal city' />
+            <img src='/imagens/mo_city.jpg' alt='montreal city' />
         </header>
     )
 
