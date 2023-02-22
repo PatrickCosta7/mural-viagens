@@ -16,19 +16,25 @@ const Formulario = (props) => {
         evento.preventDefault();
         props.novoLocal({
             nome,
-            data
+            data, 
+            viagem
         })
         setNome('');
         setData('');
+        setViagem('');
 
     }
 
     const salvandoPais = (evento) => {
         evento.preventDefault();
         props.novoLocal({
-            nomePais
+            nomePais, 
+            corPrincipal,
+            corSecundaria
         })
         setNomePais('');
+        setCorPrincipal('');
+        setCorSecundaria('');
     }
 
     return(
