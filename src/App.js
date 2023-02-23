@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import Banner from './components/Banner'
 import Formulario from './components/Formulario';
+import Mural from './components/Mural';
 
 function App() {
 
@@ -56,6 +57,9 @@ function App() {
         novoLocal={local => adicionarNovoLocal(local)}
         cadastrarPais={cadastrarPais}
         paises={paises.map(pais => pais.nome)}
+      />
+      <Mural
+        
       />
 
     </div>

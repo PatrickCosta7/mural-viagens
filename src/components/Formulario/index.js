@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Campo from '../Campo';
 import Botao from '../Botao';
+import ListaPaises from '../ListaPaises';
 import './Formulario.css';
 
 const Formulario = (props) => {
@@ -8,6 +9,7 @@ const Formulario = (props) => {
     const [nome, setNome] = useState('');
     const [data, setData] = useState('');
     const [viagem, setViagem] = useState('');
+    const [pais, setPais] = useState('');
     const [nomePais, setNomePais] = useState('');
     const [corPrincipal, setCorPrincipal] = useState('');
     const [corSecundaria, setCorSecundaria] = useState('');
@@ -17,17 +19,19 @@ const Formulario = (props) => {
         props.novoLocal({
             nome,
             data, 
-            viagem
+            viagem,
+            pais
         })
         setNome('');
         setData('');
         setViagem('');
+        setPais('');
 
     }
 
     const salvandoPais = (evento) => {
         evento.preventDefault();
-        props.novoLocal({
+        props.cadastrarPais({
             nomePais, 
             corPrincipal,
             corSecundaria
@@ -65,7 +69,13 @@ const Formulario = (props) => {
                     aoAlterado={valor => setData(valor)}
                 />
 
-                
+                <ListaPaises
+                    obrigatorio
+                    label="Selecione aqui o País visitado"
+                    itens={props.paises}
+                    valor={pais}
+                    aoAlterado={valor => setPais(valor)}
+                />                
 
                 <Botao>
                     Fixar viagem
