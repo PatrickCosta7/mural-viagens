@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import Banner from './components/Banner'
 import Formulario from './components/Formulario';
-import Mural from './components/Mural';
+import Paises from './components/Paises';
 
 function App() {
 
@@ -58,9 +58,16 @@ function App() {
         cadastrarPais={cadastrarPais}
         paises={paises.map(pais => pais.nome)}
       />
-      <Mural
-        
+      
+      {paises.map( pais => 
+      <Paises
+        nome={pais.nome}
+        id={pais.id}
+        corPrincipal={pais.corPrincipal}
+        corSecundaria={pais.corSecundaria}
       />
+      )}
+      
 
     </div>
   );
