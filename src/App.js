@@ -65,6 +65,7 @@ function App() {
         id={pais.id}
         corPrincipal={pais.corPrincipal}
         corSecundaria={pais.corSecundaria}
+        locais={locais.filter(local => local.pais === pais.nome)}
       />
       )}
       

@@ -1,3 +1,4 @@
+import Locais from '../Locais';
 import './Mural.css';
 
 const Paises = (props) => {
@@ -8,6 +9,13 @@ const Paises = (props) => {
             <input value={props.corSecundaria} type='color' className='corSecundaria' />
             <h3>{props.nome}</h3>
             <div className='locais'>
+                {props.local.map( local => {
+                    return (
+                        <Locais 
+                            
+                        />
+                    )
+                })}
 
             </div>
 
