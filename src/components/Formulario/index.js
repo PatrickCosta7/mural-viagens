@@ -55,6 +55,14 @@ const Formulario = (props) => {
 
                 <Campo
                     obrigatorio
+                    type='date'
+                    label="Data da viajem"
+                    valor={data}
+                    aoAlterado={valor => setData(valor)}
+                />
+
+                <Campo
+                    obrigatorio
                     label="Descrição"
                     placeholder="Descreva sua viagem"
                     valor={viagem}
@@ -63,9 +71,8 @@ const Formulario = (props) => {
 
                 <Campo
                     obrigatorio
-                    type='date'
-                    label="Data da viajem"
-                    valor={data}
+                    label="Imagem"
+                    valor={imagem}
                     aoAlterado={valor => setData(valor)}
                 />
 

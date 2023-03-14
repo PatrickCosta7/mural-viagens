@@ -12,7 +12,7 @@ const Paises = (props) => {
                 {props.local.map( local => {
                     return (
                         <Locais 
-                            
+                            imagem={props.imagem}
                         />
                     )
                 })}
