@@ -8,6 +8,7 @@ const Formulario = (props) => {
 
     const [nome, setNome] = useState('');
     const [data, setData] = useState('');
+    const [imagem, setImagem] = useState('');
     const [viagem, setViagem] = useState('');
     const [pais, setPais] = useState('');
     const [nomePais, setNomePais] = useState('');
@@ -18,12 +19,14 @@ const Formulario = (props) => {
         evento.preventDefault();
         props.novoLocal({
             nome,
-            data, 
+            data,
+            imagem, 
             viagem,
             pais
         })
         setNome('');
         setData('');
+        setImagem('');
         setViagem('');
         setPais('');
 
@@ -72,8 +75,9 @@ const Formulario = (props) => {
                 <Campo
                     obrigatorio
                     label="Imagem"
+                    placeholder="Digite o link para a imagem de sua viagem"
                     valor={imagem}
-                    aoAlterado={valor => setData(valor)}
+                    aoAlterado={valor => setImagem(valor)}
                 />
 
                 <ListaPaises
