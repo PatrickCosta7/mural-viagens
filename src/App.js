@@ -54,19 +54,20 @@ function App() {
       
       <Banner />
       <Formulario
-        novoLocal={local => adicionarNovoLocal(local)}
         cadastrarPais={cadastrarPais}
         paises={paises.map(pais => pais.nome)}
+        novoLocal={local => adicionarNovoLocal(local)}
       />
       
-      {paises.map( pais => 
-      <Paises
-        nome={pais.nome}
-        id={pais.id}
-        corPrincipal={pais.corPrincipal}
-        corSecundaria={pais.corSecundaria}
-        locais={locais.filter(local => local.pais === pais.nome)}
-      />
+      {paises.map(pais => 
+        <Paises
+          key={pais.nome}
+          nome={pais.nome}
+          id={pais.id}
+          corPrincipal={pais.corPrincipal}
+          corSecundaria={pais.corSecundaria}
+          locais={locais.filter(local => local.pais === pais.nome)}
+        />
       )}
       
 

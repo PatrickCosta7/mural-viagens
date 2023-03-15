@@ -9,10 +9,14 @@ const Paises = (props) => {
             <input value={props.corSecundaria} type='color' className='corSecundaria' />
             <h3>{props.nome}</h3>
             <div className='locais'>
-                {props.local.map( local => {
+                {props.locais.map( local => {
                     return (
                         <Locais 
-                            imagem={props.imagem}
+                            imagem={local.imagem}
+                            nome={props.nome}
+                            corPrincipal={props.corPrincipal}
+                            corSecundaria={props.corSecundaria}
+
                         />
                     )
                 })}
