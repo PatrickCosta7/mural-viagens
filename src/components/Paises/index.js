@@ -1,10 +1,10 @@
 import Locais from '../Locais';
-import './Mural.css';
+import './Paises.css';
 
 const Paises = (props) => {
     
     return (
-        <section className='mural'>
+        <section className='pais'>
             <input value={props.corPrincipal} type='color' className='corPrincipal' />
             <input value={props.corSecundaria} type='color' className='corSecundaria' />
             <h3>{props.nome}</h3>
@@ -13,9 +13,10 @@ const Paises = (props) => {
                     return (
                         <Locais 
                             imagem={local.imagem}
-                            nome={props.nome}
-                            corPrincipal={props.corPrincipal}
-                            corSecundaria={props.corSecundaria}
+                            nome={local.nome}
+                            data={local.data}
+                            descricaoViagem={local.descricaoViagem}
+                            cor={props.corSecundaria}
 
                         />
                     )

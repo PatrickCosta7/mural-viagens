@@ -69,7 +69,7 @@ function App() {
           locais={locais.filter(local => local.pais === pais.nome)}
         />
       )}
-      
+    
 
     </div>
   );

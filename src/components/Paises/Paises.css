@@ -1,0 +1,32 @@
+.pais{
+    text-align: center;
+    padding: 32px;
+    background-blend-mode: multiply;
+    position: relative;
+}
+
+.pais h3{
+    font-size: 32px;
+    border-bottom: 4px solid;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+.pais .locais{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 32px;
+    flex-wrap: wrap;
+}
+
+.corPrincipal{
+    position: absolute;
+    top: 20px;
+    right: 50px;
+}
+
+.corSecundaria{
+    position: absolute;
+    top: 20px;
+    right: 80px;
+}
