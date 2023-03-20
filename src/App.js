@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { v4 as uuidv4 } from 'uuid';
 import Banner from './components/Banner'
 import Formulario from './components/Formulario';
 import Paises from './components/Paises';
+import { v4 as uuidv4 } from 'uuid';
 
 function App() {
 
@@ -39,7 +39,18 @@ function App() {
     },
   ])
 
-  const [locais, setLocais] = useState('');
+  const inicial = [
+    {
+      id: uuidv4(),
+      nome: 'Salvador',
+      data: '17/11/2019',
+      descricao: 'Turismo com a familia',
+      imagem: 'https://a.cdn-hotels.com/gdcs/production67/d1025/9c42e257-fce5-4600-97d1-c3f3c6afd86b.jpg',
+      pais: paises[0].nome
+    }
+  ]
+
+  const [locais, setLocais] = useState(inicial);
 
   const adicionarNovoLocal = (local) => {
     setLocais({...locais, local})
