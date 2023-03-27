@@ -16,21 +16,3 @@ Construir um mural
 
 
 
-
-,
-    {
-      id: uuidv4(),
-      nome: 'Kyoto',
-      data: '25/03/2015',
-      descricao: 'Viagem de pós-graduacao',
-      imagem: 'https://q5e5q6q7.stackpathcdn.com/wp-content/uploads/2017/09/Kyoto.jpg',
-      pais: paises[1].nome
-    },
-    {
-      id: uuidv4(),
-      nome: 'Santorini',
-      data: '09/05/2016',
-      descricao: 'Viagem de lua de mel',
-      imagem: 'https://v9v6u8a5.stackpathcdn.com/wp-content/uploads/2020/09/santorini-grecia.jpg',
-      pais: paises[3].nome
-    },
