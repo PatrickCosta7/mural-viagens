@@ -34,3 +34,6 @@ Construir um mural
       imagem: 'https://v9v6u8a5.stackpathcdn.com/wp-content/uploads/2020/09/santorini-grecia.jpg',
       pais: paises[3].nome
     },
+
+
+    OK deu bom... problema resolvido e coisa nova aprendida.
