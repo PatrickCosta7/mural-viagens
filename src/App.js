@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { v4 as uuidv4 } from 'uuid';
 import Banner from './components/Banner'
 import Formulario from './components/Formulario';
 import Paises from './components/Paises';
+import { v4 as uuidv4 } from 'uuid';
 
 function App() {
 
@@ -39,7 +39,6 @@ function App() {
     },
   ])
 
-<<<<<<< HEAD
   const inicial = [
     {
       id: uuidv4(),
@@ -52,9 +51,6 @@ function App() {
   ]
 
   const [locais, setLocais] = useState(inicial);
-=======
-  const [locais, setLocais] = useState('');
->>>>>>> parent of 2b07d49 (Update 01 200323)
 
   const adicionarNovoLocal = (local) => {
     setLocais({...locais, local})
