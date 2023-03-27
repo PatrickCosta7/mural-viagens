@@ -44,7 +44,7 @@ function App() {
       id: uuidv4(),
       nome: 'Salvador',
       data: '17/11/2019',
-      descricaoViagem: 'Turismo com a familia',
+      descricao: 'Turismo com a familia',
       imagem: 'https://a.cdn-hotels.com/gdcs/production67/d1025/9c42e257-fce5-4600-97d1-c3f3c6afd86b.jpg',
       pais: paises[0].nome
     }
