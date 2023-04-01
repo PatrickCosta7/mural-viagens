@@ -8,9 +8,10 @@
     border-radius: 10px 10px 0px 0px;
 }
 
-.local .img{
-    width: 100px;
-    border-radius: 50%;
+.local img{
+    width: 250px;
+    height: 200px;
+    border-radius: 20%;
     position: relative;
     bottom: -50px;
 }

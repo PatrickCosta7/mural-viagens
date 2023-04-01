@@ -4,7 +4,7 @@ import './Paises.css';
 const Paises = (props) => {
     
     return (
-        (props.locais.length > 0) ? <section className='pais'>
+        (props.locais.length > 0) ? <section className='pais' style={{ backgroundColor : props.corPrincipal}}>
             <input value={props.corPrincipal} type='color' className='corPrincipal' />
             <input value={props.corSecundaria} type='color' className='corSecundaria' />
             <h3>{props.nome}</h3>
