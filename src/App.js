@@ -1,8 +1,9 @@
 import { useState } from 'react';
-import Banner from './components/Banner'
-import Formulario from './components/Formulario';
-import Paises from './components/Paises';
 import { v4 as uuidv4 } from 'uuid';
+import Banner from './components/Banner'
+import Paises from './components/Paises';
+import Rodape from './components/Rodape';
+import Formulario from './components/Formulario';
 
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
     {
       id: uuidv4(),
       nome: 'Japão',
-      corPrincipal: '#dbdcdd',
+      corPrincipal: '#c3c3c3',
       corSecundaria: '#BC002D'
     },
     {
@@ -52,7 +53,7 @@ function App() {
       id: uuidv4(),
       nome: 'Lençóis maranhenses',
       data: '04/06/2016',
-      descricao: 'Viagem inesquecível',
+      descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
       imagem: 'https://magazine.zarpo.com.br/wp-content/uploads/2021/05/oq-fazer-no-maranhao_zarpo.jpg',
       pais: paises[0].nome
     },
@@ -60,7 +61,7 @@ function App() {
       id: uuidv4(),
       nome: 'Canyon do Poty',
       data: '30/09/2022',
-      descricao: 'Turismo com a familia',
+      descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
       imagem: 'https://upload.wikimedia.org/wikipedia/pt/d/de/Images%284%29.jpg',
       pais: paises[0].nome
     },
@@ -68,7 +69,7 @@ function App() {
       id: uuidv4(),
       nome: 'Rio de Janeiro',
       data: '26/02/2013',
-      descricao: 'Viagem inesquecível',
+      descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
       imagem: 'https://media.staticontent.com/media/pictures/e63f71e3-03fb-4c1b-a1e6-c8b1586a7e73',
       pais: paises[0].nome
     },
@@ -76,7 +77,7 @@ function App() {
       id: uuidv4(),
       nome: 'Osaka',
       data: '14/05/2018',
-      descricao: 'Turismo com a familia',
+      descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
       imagem: 'https://a.travel-assets.com/findyours-php/viewfinder/images/res70/477000/477571-Osaka.jpg',
       pais: paises[1].nome
     },
@@ -84,7 +85,7 @@ function App() {
       id: uuidv4(),
       nome: 'Monte Fuji',
       data: '20/05/2018',
-      descricao: 'Turismo com a familia',
+      descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
       imagem: 'https://www.qualviagem.com.br/wp-content/uploads/2021/02/iStock-1192780580.jpg',
       pais: paises[1].nome
     },
@@ -92,7 +93,7 @@ function App() {
       id: uuidv4(),
       nome: 'Naoshima',
       data: '25/05/2018',
-      descricao: 'Turismo com a familia',
+      descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
       imagem: 'https://dasartes.com.br/dasartes.com.br/wp-content/uploads/2022/10/naoshima-island-5.jpg',
       pais: paises[1].nome
     },
@@ -100,7 +101,7 @@ function App() {
       id: uuidv4(),
       nome: 'Tokyo',
       data: '30/05/2018',
-      descricao: 'Turismo com a familia',
+      descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
       imagem: 'https://content.r9cdn.net/rimg/dimg/ea/d1/34822ae1-city-21033-1647f45cd43.jpg?width=1366&height=768&xhint=1518&yhint=1265&crop=true',
       pais: paises[1].nome
     }
@@ -137,6 +138,7 @@ function App() {
         />
       )}
     
+      <Rodape />
 
     </div>
   );

@@ -1,0 +1,29 @@
+.footer {
+    background: #5786fe;
+    color: #FFF;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer ul li{
+    display: inline-block;
+    margin-right: 35px;
+}
+
+.footer ul li:last-child {
+    margin-right: 0;
+}
+
+.footer .copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .copy .cp{
+    width: 12px;
+    height: 12px;
+}
+
