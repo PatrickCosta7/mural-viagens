@@ -104,6 +104,38 @@ function App() {
       descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
       imagem: 'https://content.r9cdn.net/rimg/dimg/ea/d1/34822ae1-city-21033-1647f45cd43.jpg?width=1366&height=768&xhint=1518&yhint=1265&crop=true',
       pais: paises[1].nome
+    },
+    {
+      id: uuidv4(),
+      nome: 'Olso',
+      data: '07/07/2016',
+      descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+      imagem: 'https://a.cdn-hotels.com/gdcs/production7/d1296/9e2b1691-4f1f-4ccc-902b-f945c05e7dcb.jpg',
+      pais: paises[2].nome
+    },
+    {
+      id: uuidv4(),
+      nome: 'Gudvangen',
+      data: '12/07/2016',
+      descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+      imagem: 'https://mundopraviver.com.br/wp-content/uploads/2020/08/credito-Gisele-Rodrigues-9-1-1024x683.jpg',
+      pais: paises[2].nome
+    },
+    {
+      id: uuidv4(),
+      nome: ' Tromso',
+      data: '18/07/2016',
+      descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+      imagem: 'https://mundopraviver.com.br/wp-content/uploads/2020/08/angela-compagnone-l9cneQNE03Y-unsplash-1024x683.jpg',
+      pais: paises[2].nome
+    },
+    {
+      id: uuidv4(),
+      nome: 'Bergen',
+      data: '23/07/2016',
+      descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+      imagem: 'https://images.contentstack.io/v3/assets/blt00454ccee8f8fe6b/blt156394aa70c56334/61bc5185130d606170802e59/UK_Bergen_Norway_Header.jpg',
+      pais: paises[2].nome
     }
   ]
 
