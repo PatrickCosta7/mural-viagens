@@ -4,7 +4,7 @@ import hexToRgba from 'hex-to-rgba';
 
 const Paises = (props) => {
     
-    var css = {backgroundColor : hexToRgba( props.corPrincipal , '0.7')};
+    var css = {backgroundColor : hexToRgba( props.corPrincipal , '0.9')};
 
     return (
         (props.locais.length > 0) ? <section className='pais' style={css}>

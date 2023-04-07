@@ -10,31 +10,31 @@ function App() {
   const [paises, setPaises] = useState([
     {
       id: uuidv4(),
-      nome: 'Brasil',
+      nomePais: 'Brasil',
       corPrincipal: '#009b3a',
       corSecundaria: '#fedf00'
     },
     {
       id: uuidv4(),
-      nome: 'Japão',
+      nomePais: 'Japão',
       corPrincipal: '#c3c3c3',
       corSecundaria: '#BC002D'
     },
     {
       id: uuidv4(),
-      nome: 'Noruega',
+      nomePais: 'Noruega',
       corPrincipal: '#BA0C2F',
       corSecundaria: '#00205B'
     },
     {
       id: uuidv4(),
-      nome: 'Grécia',
+      nomePais: 'Grécia',
       corPrincipal: '#001489',
       corSecundaria: '#ffffff'
     },
     {
       id: uuidv4(),
-      nome: 'Turquia',
+      nomePais: 'Turquia',
       corPrincipal: '#C8102E',
       corSecundaria: '#ffffff'
     }
@@ -47,7 +47,7 @@ function App() {
       data: '17/11/2019',
       descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
       imagem: 'https://a.cdn-hotels.com/gdcs/production67/d1025/9c42e257-fce5-4600-97d1-c3f3c6afd86b.jpg',
-      pais: paises[0].nome
+      pais: paises[0].nomePais
     },
     {
       id: uuidv4(),
@@ -55,7 +55,7 @@ function App() {
       data: '04/06/2016',
       descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
       imagem: 'https://magazine.zarpo.com.br/wp-content/uploads/2021/05/oq-fazer-no-maranhao_zarpo.jpg',
-      pais: paises[0].nome
+      pais: paises[0].nomePais
     },
     {
       id: uuidv4(),
@@ -63,7 +63,7 @@ function App() {
       data: '30/09/2022',
       descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
       imagem: 'https://upload.wikimedia.org/wikipedia/pt/d/de/Images%284%29.jpg',
-      pais: paises[0].nome
+      pais: paises[0].nomePais
     },
     {
       id: uuidv4(),
@@ -71,7 +71,7 @@ function App() {
       data: '26/02/2013',
       descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
       imagem: 'https://media.staticontent.com/media/pictures/e63f71e3-03fb-4c1b-a1e6-c8b1586a7e73',
-      pais: paises[0].nome
+      pais: paises[0].nomePais
     },
     {
       id: uuidv4(),
@@ -79,7 +79,7 @@ function App() {
       data: '14/05/2018',
       descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
       imagem: 'https://a.travel-assets.com/findyours-php/viewfinder/images/res70/477000/477571-Osaka.jpg',
-      pais: paises[1].nome
+      pais: paises[1].nomePais
     },
     {
       id: uuidv4(),
@@ -87,7 +87,7 @@ function App() {
       data: '20/05/2018',
       descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
       imagem: 'https://www.qualviagem.com.br/wp-content/uploads/2021/02/iStock-1192780580.jpg',
-      pais: paises[1].nome
+      pais: paises[1].nomePais
     },
     {
       id: uuidv4(),
@@ -95,7 +95,7 @@ function App() {
       data: '25/05/2018',
       descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
       imagem: 'https://dasartes.com.br/dasartes.com.br/wp-content/uploads/2022/10/naoshima-island-5.jpg',
-      pais: paises[1].nome
+      pais: paises[1].nomePais
     },
     {
       id: uuidv4(),
@@ -103,7 +103,7 @@ function App() {
       data: '30/05/2018',
       descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
       imagem: 'https://content.r9cdn.net/rimg/dimg/ea/d1/34822ae1-city-21033-1647f45cd43.jpg?width=1366&height=768&xhint=1518&yhint=1265&crop=true',
-      pais: paises[1].nome
+      pais: paises[1].nomePais
     },
     {
       id: uuidv4(),
@@ -111,7 +111,7 @@ function App() {
       data: '07/07/2016',
       descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
       imagem: 'https://a.cdn-hotels.com/gdcs/production7/d1296/9e2b1691-4f1f-4ccc-902b-f945c05e7dcb.jpg',
-      pais: paises[2].nome
+      pais: paises[2].nomePais
     },
     {
       id: uuidv4(),
@@ -119,7 +119,7 @@ function App() {
       data: '12/07/2016',
       descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
       imagem: 'https://mundopraviver.com.br/wp-content/uploads/2020/08/credito-Gisele-Rodrigues-9-1-1024x683.jpg',
-      pais: paises[2].nome
+      pais: paises[2].nomePais
     },
     {
       id: uuidv4(),
@@ -127,7 +127,7 @@ function App() {
       data: '18/07/2016',
       descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
       imagem: 'https://mundopraviver.com.br/wp-content/uploads/2020/08/angela-compagnone-l9cneQNE03Y-unsplash-1024x683.jpg',
-      pais: paises[2].nome
+      pais: paises[2].nomePais
     },
     {
       id: uuidv4(),
@@ -135,7 +135,7 @@ function App() {
       data: '23/07/2016',
       descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
       imagem: 'https://images.contentstack.io/v3/assets/blt00454ccee8f8fe6b/blt156394aa70c56334/61bc5185130d606170802e59/UK_Bergen_Norway_Header.jpg',
-      pais: paises[2].nome
+      pais: paises[2].nomePais
     }
   ]
 
@@ -147,7 +147,7 @@ function App() {
   }
 
   function cadastrarPais(novoPais){
-    setPaises([...paises, {novoPais, id: uuidv4()}])
+    setPaises([...paises, {...novoPais, id: uuidv4()}])
   }
 
   function mudarCorPrincipalPais(cor, id){
@@ -174,7 +174,7 @@ function App() {
       <Banner />
       <Formulario
         cadastrarPais={cadastrarPais}
-        paises={paises.map(pais => pais.nome)}
+        paises={paises.map(pais => pais.nomePais)}
         novoLocal={local => adicionarNovoLocal(local)}
       />
       
@@ -182,12 +182,12 @@ function App() {
         <Paises
           mudarCorPrincipal={mudarCorPrincipalPais}
           mudarCorSecundaria={mudarCorSecundariaPais}
-          key={pais.nome}
-          nome={pais.nome}
+          key={pais.nomePais}
+          nome={pais.nomePais}
           id={pais.id}
           corPrincipal={pais.corPrincipal}
           corSecundaria={pais.corSecundaria}
-          locais={locais.filter(local => local.pais === pais.nome)}
+          locais={locais.filter(local => local.pais === pais.nomePais)}
         />
       )}
     

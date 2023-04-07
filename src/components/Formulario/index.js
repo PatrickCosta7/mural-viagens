@@ -9,7 +9,7 @@ const Formulario = (props) => {
     const [nome, setNome] = useState('');
     const [data, setData] = useState('');
     const [imagem, setImagem] = useState('');
-    const [descricaoViagem, setDescricaoViagem] = useState('');
+    const [descricao, setDescricao] = useState('');
     const [pais, setPais] = useState('');
     const [nomePais, setNomePais] = useState('');
     const [corPrincipal, setCorPrincipal] = useState('');
@@ -21,15 +21,14 @@ const Formulario = (props) => {
             nome,
             data,
             imagem, 
-            descricaoViagem,
+            descricao,
             pais
         })
         setNome('');
         setData('');
         setImagem('');
-        setDescricaoViagem('');
+        setDescricao('');
         setPais('');
-
     }
 
     const salvandoPais = (evento) => {
@@ -68,8 +67,8 @@ const Formulario = (props) => {
                     obrigatorio
                     label="Descrição"
                     placeholder="Descreva sua viagem"
-                    valor={descricaoViagem}
-                    aoAlterado={valor => setDescricaoViagem(valor)}
+                    valor={descricao}
+                    aoAlterado={valor => setDescricao(valor)}
                 />
 
                 <Campo
