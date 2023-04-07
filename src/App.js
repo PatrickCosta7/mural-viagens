@@ -141,12 +141,31 @@ function App() {
 
   const [locais, setLocais] = useState(inicial);
 
+
   const adicionarNovoLocal = (local) => {
-    setLocais({...locais, local})
+    setLocais([...locais, local])
   }
 
   function cadastrarPais(novoPais){
     setPaises([...paises, {novoPais, id: uuidv4()}])
+  }
+
+  function mudarCorPrincipalPais(cor, id){
+    setPaises(paises.map(pais => {
+      if(pais.id === id){
+        pais.corPrincipal = cor;
+      }
+      return pais;
+    }))
+  }
+
+  function mudarCorSecundariaPais(cor, id){
+    setPaises(paises.map(pais => {
+      if(pais.id === id){
+        pais.corSecundaria = cor;
+      }
+      return pais;
+    }))
   }
 
   return (
@@ -161,6 +180,8 @@ function App() {
       
       {paises.map(pais => 
         <Paises
+          mudarCorPrincipal={mudarCorPrincipalPais}
+          mudarCorSecundaria={mudarCorSecundariaPais}
           key={pais.nome}
           nome={pais.nome}
           id={pais.id}

@@ -8,8 +8,8 @@ const Paises = (props) => {
 
     return (
         (props.locais.length > 0) ? <section className='pais' style={css}>
-            <input value={props.corPrincipal} type='color' className='corPrincipal' />
-            <input value={props.corSecundaria} type='color' className='corSecundaria' />
+            <input onChange={evento => props.mudarCorPrincipal(evento.target.value, props.id)} value={props.corPrincipal} type='color' className='corPrincipal' />
+            <input onChange={evento => props.mudarCorSecundaria(evento.target.value, props.id)} value={props.corSecundaria} type='color' className='corSecundaria' />
             <h3 style={{ color : props.corSecundaria }} >{props.nome}</h3>
             <div className='locais'>
                 {props.locais.map( local => {
@@ -21,7 +21,6 @@ const Paises = (props) => {
                             descricao={local.descricao}
                             corSecundaria={props.corSecundaria}
                             corPrincipal={props.corPrincipal}
-
                         />
                     )
                 })}
