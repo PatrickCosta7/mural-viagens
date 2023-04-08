@@ -58,7 +58,7 @@ const Formulario = (props) => {
                 <Campo
                     obrigatorio
                     type='date'
-                    label="Data da viajem"
+                    label="Data da viagem"
                     valor={data}
                     aoAlterado={valor => setData(valor)}
                 />

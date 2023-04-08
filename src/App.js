@@ -29,14 +29,32 @@ function App() {
     {
       id: uuidv4(),
       nomePais: 'Grécia',
-      corPrincipal: '#001489',
-      corSecundaria: '#ffffff'
+      corPrincipal: '#c3c3c3',
+      corSecundaria: '#001489'
     },
     {
       id: uuidv4(),
       nomePais: 'Turquia',
       corPrincipal: '#C8102E',
-      corSecundaria: '#ffffff'
+      corSecundaria: '#c3c3c3'
+    },
+    {
+      id: uuidv4(),
+      nomePais: 'Madagascar',
+      corPrincipal: '#00843D',
+      corSecundaria: '#F9423A'
+    },
+    {
+      id: uuidv4(),
+      nomePais: 'Canada',
+      corPrincipal: '##ff0000',
+      corSecundaria: '#c3c3c3'
+    },
+    {
+      id: uuidv4(),
+      nomePais: 'Colômbia',
+      corPrincipal: '##ff0000',
+      corSecundaria: '#BC002D'
     }
   ])
 
@@ -136,7 +154,103 @@ function App() {
       descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
       imagem: 'https://images.contentstack.io/v3/assets/blt00454ccee8f8fe6b/blt156394aa70c56334/61bc5185130d606170802e59/UK_Bergen_Norway_Header.jpg',
       pais: paises[2].nomePais
-    }
+    },
+    {
+      id: uuidv4(),
+      nome: 'Salônica',
+      data: '09/02/2008',
+      descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+      imagem: 'https://www.viajali.com.br/wp-content/uploads/2018/02/grecia-19.jpg',
+      pais: paises[3].nomePais
+    },
+    {
+      id: uuidv4(),
+      nome: 'Teatro de Epidauro',
+      data: '15/02/2008',
+      descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+      imagem: 'https://www.viajali.com.br/wp-content/uploads/2018/02/grecia-18.jpg',
+      pais: paises[3].nomePais
+    },
+    {
+      id: uuidv4(),
+      nome: 'Meteora',
+      data: '25/02/2008',
+      descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+      imagem: 'https://www.viajali.com.br/wp-content/uploads/2018/02/grecia-8.jpg',
+      pais: paises[3].nomePais
+    },
+    {
+      id: uuidv4(),
+      nome: 'Santorini',
+      data: '01/03/2008',
+      descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+      imagem: 'https://www.viajali.com.br/wp-content/uploads/2018/02/grecia-5.jpg',
+      pais: paises[3].nomePais
+    },
+    {
+      id: uuidv4(),
+      nome: 'Museu de Mosaicos Gaziantep Zeugma',
+      data: '09/01/2012',
+      descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+      imagem: 'https://guiaviajarmelhor.com.br/wp-content/uploads/2018/09/pontos-turisticos-Turquia-3-1024x683.jpg',
+      pais: paises[4].nomePais
+    },
+    {
+      id: uuidv4(),
+      nome: 'O Castelo de Algodão',
+      data: '16/01/2012',
+      descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+      imagem: 'https://guiaviajarmelhor.com.br/wp-content/uploads/2018/09/pontos-turisticos-Turquia-11.jpg',
+      pais: paises[4].nomePais
+    },
+    {
+      id: uuidv4(),
+      nome: 'Vale da Imaginação',
+      data: '20/01/2012',
+      descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+      imagem: 'https://guiaviajarmelhor.com.br/wp-content/uploads/2018/09/pontos-turisticos-Turquia-4.jpg',
+      pais: paises[4].nomePais
+    },
+    {
+      id: uuidv4(),
+      nome: 'Basílica de Santa Sofia',
+      data: '26/01/2012',
+      descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+      imagem: 'https://guiaviajarmelhor.com.br/wp-content/uploads/2018/09/pontos-turisticos-Turquia-10-1024x768.jpg',
+      pais: paises[4].nomePais
+    },
+    {
+      id: uuidv4(),
+      nome: 'Avenida dos Baobás',
+      data: '12/01/2014',
+      descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+      imagem: 'https://www.guiadasemana.com.br/contentFiles/image/2019/02/FEA/galeria/58885_w840h525_1551383048shutterstock-1125367931-baobas.jpg',
+      pais: paises[5].nomePais
+    },
+    {
+      id: uuidv4(),
+      nome: 'Tsingy de Bemaraha',
+      data: '16/01/2014',
+      descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+      imagem: 'https://www.guiadasemana.com.br/contentFiles/image/2019/02/FEA/galeria/58885_w840h525_1551383050shutterstock-259526786-tsingy-de-bemaraha.jpg',
+      pais: paises[5].nomePais
+    },
+    {
+      id: uuidv4(),
+      nome: 'Ranomafana',
+      data: '20/01/2014',
+      descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+      imagem: 'https://www.guiadasemana.com.br/contentFiles/image/2019/02/FEA/galeria/58885_w840h525_1551383067shutterstock-1084027373-ranomafana.jpg',
+      pais: paises[5].nomePais
+    },
+    {
+      id: uuidv4(),
+      nome: 'Nosy Be',
+      data: '27/01/2014',
+      descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+      imagem: 'https://www.guiadasemana.com.br/contentFiles/image/2019/02/FEA/galeria/58885_w840h525_1551383071shutterstock-366323072-nosy-be.jpg',
+      pais: paises[5].nomePais
+    },
   ]
 
   const [locais, setLocais] = useState(inicial);
