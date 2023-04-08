@@ -29,7 +29,7 @@ const Rodape = () => {
             
             <section className='copy'>
                 <img src='/imagens/copy.png' alt='copyright' className='cp'/>
-                <p>2023 copright </p>
+                <p>2023 copyright </p>
             </section>
 
             <section>

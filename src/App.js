@@ -168,6 +168,10 @@ function App() {
     }))
   }
 
+  function deletarLocais(id) {
+    setLocais(locais.filter(local => local.id !== id));
+  }
+
   return (
     <div className="App">
       
@@ -182,6 +186,7 @@ function App() {
         <Paises
           mudarCorPrincipal={mudarCorPrincipalPais}
           mudarCorSecundaria={mudarCorSecundariaPais}
+          aoDeletar={deletarLocais}
           key={pais.nomePais}
           nome={pais.nomePais}
           id={pais.id}

@@ -14,13 +14,15 @@ const Paises = (props) => {
             <div className='locais'>
                 {props.locais.map( local => {
                     return (
-                        <Locais 
+                        <Locais
+                            id={local.id} 
                             imagem={local.imagem}
                             nome={local.nome}
                             data={local.data}
                             descricao={local.descricao}
                             corSecundaria={props.corSecundaria}
                             corPrincipal={props.corPrincipal}
+                            aoDeletar={props.aoDeletar}
                         />
                     )
                 })}
