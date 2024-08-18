@@ -16,6 +16,12 @@
     margin-right: 0;
 }
 
+.footer button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 .footer .copy {
     display: flex;
     align-items: center;

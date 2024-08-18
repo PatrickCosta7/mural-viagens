@@ -9,19 +9,19 @@ const Rodape = () => {
             <section>
                 <ul>
                     <li>
-                        <a href='#' target='_blank'>
+                        <button>
                             <img src='/imagens/fb.png' alt='Facebook'/>
-                        </a>
+                        </button>
                     </li>
                     <li>
-                        <a href='#' target='_blank'>
+                        <button>
                             <img src='/imagens/tw.png' alt='Twitter'/>
-                        </a>
+                        </button>
                     </li>
                     <li>
-                        <a href='#' target='_blank'>
+                        <button>
                             <img src='/imagens/ig.png' alt='Instagram'/>
-                        </a>
+                        </button>
                     </li>
 
                 </ul>

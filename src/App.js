@@ -136,7 +136,7 @@ function App() {
       nome: 'Gudvangen',
       data: '12/07/2016',
       descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-      imagem: 'https://mundopraviver.com.br/wp-content/uploads/2020/08/credito-Gisele-Rodrigues-9-1-1024x683.jpg',
+      imagem: 'https://upload.wikimedia.org/wikipedia/commons/1/16/Gudvangen_kai.jpg',
       pais: paises[2].nomePais
     },
     {
@@ -144,7 +144,7 @@ function App() {
       nome: ' Tromso',
       data: '18/07/2016',
       descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-      imagem: 'https://mundopraviver.com.br/wp-content/uploads/2020/08/angela-compagnone-l9cneQNE03Y-unsplash-1024x683.jpg',
+      imagem: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Tromso_Troms%C3%B8_Norway_tunliweb_02.jpg/1200px-Tromso_Troms%C3%B8_Norway_tunliweb_02.jpg',
       pais: paises[2].nomePais
     },
     {
