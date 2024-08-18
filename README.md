@@ -12,7 +12,7 @@ Certifique que você tenha em sua máquina o Docker engine instalado e rodando: 
 
 Baixe o projeto, acesse sua pasta pelo terminal e digite o comando:
 
-    Docker compose up
+    docker compose up
 
 Abra [http://localhost:3000](http://localhost:3000) em seu navegador para visualizar o projeto.
 
